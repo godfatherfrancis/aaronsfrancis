@@ -261,13 +261,18 @@ input.error, textarea.error {
 
 #nav ul li a {
 	display: block;
-	font-size: 0.938em;
+	font-size: 1.938em;
 	letter-spacing: 0.1em;
 	color: #5b9bbc;
 	text-decoration: none;
 }
 
 #nav ul li a:hover, #nav ul li.current a { color: #fff; }*/
+
+.navbar-nav li {
+
+    text-align: center;
+}
 
 /* 2.2 Info box */
 
