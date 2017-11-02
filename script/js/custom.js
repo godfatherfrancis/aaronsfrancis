@@ -24,6 +24,6 @@ jQuery( document ).ready( function( $ ){
 //	});
 
 	// Full background image
-	$( '.fx-backstretch' ).find( '.info' ).backstretch( '../static/images/water.jpg' );
+	$( '.fx-backstretch' ).find( '.info' ).backstretch( 'images/water.jpg' );
 
 });
