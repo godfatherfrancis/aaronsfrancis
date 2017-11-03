@@ -76,7 +76,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-full">
-                    <h1>Aaron S Francis</h1>
+                    <h1 id="my-shine-object">Aaron S Francis</h1>
                 </div>
             </div>
             <div class="row">
@@ -95,8 +95,24 @@
 <!-- jQuery Backstretch (full photo background) -->
 <script src="script/js/jquery.backstretch.min.js"></script>
 
+<!-- shine scripting -->
+<script src="script/js/shine.min.js"></script>
+
 <!-- custom scripting -->
 <script src="script/js/custom.js"></script>
+
+<script>
+    var shine = new Shine(document.getElementById('my-shine-object'));
+
+    window.addEventListener('mousemove', function(event) {
+        shine.light.position.x = event.clientX;
+        shine.light.position.y = event.clientY;
+        shine.config.opacity = 0.55;
+        shine.config.blur = 0;
+        shine.config.numSteps = 5;
+        shine.draw();
+    }, false);
+</script>
 
 </body>
 </html>

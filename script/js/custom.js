@@ -1,5 +1,7 @@
 jQuery( document ).ready( function( $ ){
 
+    printCredits();
+
 	// Intro size setup
 
 	setupIntro(); // On ready, resize intro
@@ -12,21 +14,8 @@ jQuery( document ).ready( function( $ ){
 		$( '.info' ).find( '.container' ).css( 'top', ( ( infoBox.height() - titleBox.height() - 20 ) / 1.87) + 'px' );
 	}
 
-//	// Making navigation sticky on scroll
-//	$( '#nav' ).sticky( { topSpacing:10 } );
-//
-//	$( '#nav ul' ).onePageNav( { scrollSpeed: 400, filter: ':not(.external)'} );
-//
-//	$(window).scroll(function(){
-//		if($(window).scrollTop() < $(window).height()/2) {
-//			$('#nav').find('li').removeClass('current');
-//		}
-//	});
-
 	// Full background image
 	$( '.fx-backstretch' ).find( '.info' ).backstretch( 'images/water.jpg' );
-
-    printCredits();
 
     function printCredits() {
         console.log("                                                                                          \
