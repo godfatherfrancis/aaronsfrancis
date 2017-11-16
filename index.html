@@ -27,8 +27,29 @@
 </head>
 <body>
 
-<!-- Start: Intro -->
-<section id="intro" class="fx-backstretch">
+<!-- Start -->
+
+    <div class="container">
+
+        <div class="info">
+            <!--name container-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-full">
+                        <h1 id="my-shine-object">Aaron S Francis</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-full">
+                        <h4>Junior Software Engineer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="glitch-img" style="background-image: url('https://raw.githubusercontent.com/godfatherfrancis/godfatherfrancis/master/images/water.jpg')"></div>
+    </div>
+
     <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation"
          style="background-color:black;">
         <div class="container-fluid">
@@ -70,38 +91,21 @@
 
         </div>
     </nav>
+<!-- End -->
 
-    <div class="info">
-        <!--name container-->
-        <div class="container">
-            <div class="row">
-                <div class="col-full">
-                    <h1 id="my-shine-object">Aaron S Francis</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-full">
-                    <h4>Junior Software Engineer</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End: Intro -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<!-- jQuery Backstretch (full photo background) -->
-<script src="script/js/jquery.backstretch.min.js"></script>
-
 <!-- shine scripting -->
-<script src="script/js/shine.min.js"></script>
+<!--<script src="script/js/shine.min.js"></script>-->
+
+<!-- mgGlitch -->
+<script src="https://cdn.rawgit.com/hmongouachon/mgGlitch/master/src/mgGlitch.min.js"></script>
 
 <!-- custom scripting -->
 <script src="script/js/custom.js"></script>
 
-<script>
+<!--<script>
     var shine = new Shine(document.getElementById('my-shine-object'));
 
     window.addEventListener('mousemove', function(event) {
@@ -112,7 +116,7 @@
         shine.config.numSteps = 5;
         shine.draw();
     }, false);
-</script>
+</script>-->
 
 </body>
 </html>
