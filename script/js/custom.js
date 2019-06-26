@@ -47,4 +47,16 @@ jQuery( document ).ready( function( $ ){
 
     glitch();
 
+    let info = document.querySelector("#my-shine-object");
+
+    info.onclick = toggleClass;
+
+    function toggleClass(){
+        if(info.className == 'name'){
+            info.className = ''
+        } else {
+            info.className = 'name'
+        }
+    }
+
 });
